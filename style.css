@@ -1,0 +1,96 @@
+/* Reset dan Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Sans-Serif modern */
+    background-color: #000000; /* Hitam */
+    color: #ffffff; /* Putih untuk teks */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Katalog Section */
+.katalog {
+    padding: 60px 0;
+    background-color: #0a0a0a; /* Abu-abu gelap */
+}
+.katalog h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+.film-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Selalu satu kolom untuk tampilan vertikal */
+    gap: 20px;
+    list-style: none;
+}
+.film-item {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.film-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+.film-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.film-item p {
+    color: #cccccc;
+}
+.access-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.access-button:hover {
+    background-color: #cc0000;
+}
+/* Fitur Kustom */
+.fitur-kustom {
+    padding: 60px 0;
+    background-color: #000000;
+    text-align: center;
+}
+.fitur-kustom h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.embed-area {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    max-width: 800px;
+}
+/* Mobile-Friendly */
+@media (max-width: 768px) {
+    .katalog h2 {
+        font-size: 2rem;
+    }
+    .fitur-kustom h2 {
+        font-size: 1.8rem;
+    }
+}

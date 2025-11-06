@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioskop Terkunci - Katalog Film Eksklusif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fitur Kustom (Search) -->
+    <section class="fitur-kustom">
+        <div class="container">
+            <h2>Cari File/Nomor Kunci Anda</h2>
+            <div class="embed-area">
+                <!-- Blok Kosong untuk Embed HTML/JS Pencarian Kustom -->
+                <!-- Sisipkan kode HTML/JavaScript pencarian di sini, misalnya widget seperti Ctrl+F untuk daftar film -->
+                <p style="color: #cccccc;">Area ini kosong untuk embed widget pencarian kustom. Gunakan untuk menyematkan kode HTML/JS yang memungkinkan pencarian di daftar film.</p>
+                <!-- Contoh placeholder: Anda bisa menambahkan input pencarian sederhana di sini -->
+                <input type="text" id="searchInput" placeholder="Cari nomor atau judul film..." style="width: 100%; padding: 10px; margin-top: 20px; background-color: #333333; color: #ffffff; border: 1px solid #555555; border-radius: 5px;">
+                <button onclick="searchFilms()" style="margin-top: 10px; background-color: #ff0000; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Cari</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog Film -->
+    <section class="katalog" id="katalog">
+        <div class="container">
+            <h2>Katalog Film Eksklusif Minggu Ini</h2>
+            <ul class="film-list" id="film-list">
+                <!-- Daftar film akan dihasilkan secara dinamis oleh script.js -->
+            </ul>
+        </div>
+    </section>
+
+    <script src="films-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
